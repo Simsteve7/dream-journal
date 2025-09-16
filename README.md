@@ -1,46 +1,124 @@
-# Getting Started with Create React App
+# Dream Journal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A multilingual Progressive Web App (PWA) for capturing your ideas and dreams. This lightweight and easily accessible tool helps you quickly jot down thoughts, dreams, and inspirations before they fade away.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- **📱 Progressive Web App**: Install and use offline on any device
+- **🌍 Multilingual Support**: Available in English, Spanish, French, and German
+- **💾 Local Storage**: Your data stays private on your device
+- **🔄 Cloud Sync**: Optional synchronization across devices (with authentication)
+- **📝 Rich Note Taking**: Categorize notes as dreams, ideas, thoughts, reminders, or other
+- **🎨 Modern UI**: Clean, responsive interface with accessibility features
+- **🔍 Search & Filter**: Find your notes quickly
+- **🌙 Theme Support**: Light and dark mode support
 
-### `npm start`
+## 🚀 Quick Start
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js (version 16 or higher)
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Simsteve7/dream-journal.git
+   cd dream-journal
+   ```
 
-### `npm run build`
+2. Install dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Building for Production
 
-### `npm run eject`
+```bash
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This creates an optimized production build in the `build` folder, ready for deployment.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Development
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Available Scripts
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
 
-## Learn More
+### Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/          # Reusable UI components
+├── services/           # Data storage and sync services
+├── i18n/              # Internationalization configuration
+├── App.tsx            # Main application component
+└── index.tsx          # Application entry point
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🌐 Internationalization
+
+The app supports multiple languages out of the box:
+- English (en)
+- Spanish (es)
+- French (fr)
+- German (de)
+
+Language detection is automatic based on browser settings, with manual override available in settings.
+
+## 💽 Data Storage
+
+- **Local Storage**: Uses IndexedDB via localforage for offline storage
+- **Cloud Sync**: Optional integration with Firebase for cross-device synchronization
+- **Privacy First**: All data remains local unless you explicitly enable cloud sync
+
+## 🎯 Usage
+
+1. **Create Notes**: Click the text area and start typing your dream or idea
+2. **Categorize**: Select a category (dream, idea, thought, reminder, other)
+3. **Save**: Click "Save Note" to store your entry
+4. **Edit/Delete**: Use the action buttons on each note card
+5. **Search**: Use the search functionality to find specific notes
+6. **Settings**: Configure language, theme, and storage preferences
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔒 Security
+
+For security concerns and vulnerability reports, please see our [Security Policy](SECURITY.md).
+
+## 📋 Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes and updates.
+
+## 💬 Support
+
+If you encounter any issues or have questions:
+- Check existing [Issues](https://github.com/Simsteve7/dream-journal/issues)
+- Create a new issue if needed
+- Follow our [Code of Conduct](CODE_OF_CONDUCT.md)
+
+## 🙏 Acknowledgments
+
+- Built with [Create React App](https://create-react-app.dev/)
+- Icons from [React Icons](https://react-icons.github.io/react-icons/)
+- Internationalization with [react-i18next](https://react.i18next.com/)
+- Offline storage with [localforage](https://localforage.github.io/localForage/)
