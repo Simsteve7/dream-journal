@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dream Journal",
+  "name": "Dream Journal - Capture Ideas & Dreams",
+  "description": "A multilingual PWA for quick note-taking to capture your ideas and dreams",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,11 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#667eea",
+  "background_color": "#f8fafc",
+  "orientation": "portrait-primary",
+  "categories": ["productivity", "lifestyle", "utilities"],
+  "lang": "en",
+  "scope": "/",
+  "prefer_related_applications": false
 }
