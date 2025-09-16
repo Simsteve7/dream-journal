@@ -83,7 +83,7 @@ function NoteCard({ note, onEdit, onDelete }: NoteCardProps) {
               className="confirm-btn cancel"
               onClick={() => setShowDeleteConfirm(false)}
             >
-              Cancel
+              {t('cancel')}
             </button>
           </div>
         </div>
@@ -128,10 +128,10 @@ function EditModal({ note, isOpen, onClose, onSave }: EditModalProps) {
           />
           <div className="edit-actions">
             <button type="button" onClick={onClose}>
-              Cancel
+              {t('common.cancel')}
             </button>
             <button type="submit" disabled={!content.trim()}>
-              Save
+              {t('common.save')}
             </button>
           </div>
         </form>
