@@ -1,4 +1,17 @@
-# Getting Started with Create React App
+# Dream Journal
+
+A lightweight, accessible application for capturing ideas, thoughts, and dreams as they occur. Built with React and TypeScript, featuring multi-language support and offline-first storage.
+
+## Features
+
+- **Quick Note Capture**: Fast, distraction-free interface for recording thoughts
+- **Categorization**: Organize notes as dreams, ideas, thoughts, reminders, or other
+- **Multi-language Support**: Available in English, French, Spanish, and German
+- **Offline-First**: Local storage with optional cloud synchronization
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Accessibility**: Full keyboard navigation and screen reader support
+
+## Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -44,3 +57,40 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Development
+
+### Architecture
+
+The application follows a component-based architecture with:
+- **React Context** for state management
+- **LocalForage** for offline-first storage
+- **react-i18next** for internationalization
+- **TypeScript** for type safety
+
+### Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── hooks/          # Custom React hooks
+├── i18n/           # Internationalization config
+├── services/       # Business logic and storage
+└── types/          # TypeScript definitions
+```
+
+### For AI Assistants
+
+If you're using GitHub Copilot or other AI coding assistants, please refer to [`.copilot-instructions.md`](./.copilot-instructions.md) for detailed coding patterns, conventions, and project-specific guidance.
+
+## Contributing
+
+1. Follow the existing code patterns and TypeScript conventions
+2. Add translations for any new user-facing text
+3. Ensure accessibility compliance with keyboard navigation and ARIA labels
+4. Test on both desktop and mobile devices
+5. Run `npm run build` to verify the build passes
+
+## License
+
+This project is private and not open for external contributions.
