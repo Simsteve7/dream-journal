@@ -1,15 +1,21 @@
 # Dream Journal
 
-A lightweight, accessible application for capturing ideas, thoughts, and dreams as they occur. Built with React and TypeScript, featuring multi-language support and offline-first storage.
+A lightweight, accessible application exclusively for recording, exploring, and analyzing your dreams. Built with React and TypeScript, featuring multi-language support and offline-first storage.
 
 ## Features
 
-- **Quick Note Capture**: Fast, distraction-free interface for recording thoughts
-- **Categorization**: Organize notes as dreams, ideas, thoughts, reminders, or other
+- **Dream Recording**: Fast, distraction-free interface for capturing dream memories
+- **Dream-Focused Interface**: Purpose-built for dream journaling only
 - **Multi-language Support**: Available in English, French, Spanish, and German
 - **Offline-First**: Local storage with optional cloud synchronization
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Accessibility**: Full keyboard navigation and screen reader support
+
+## Important Notice for Existing Users
+
+**Application Focus Change**: This application has been refocused to be exclusively a dream journal. All existing entries will continue to be accessible, but the app now only supports recording dreams. 
+
+If you have non-dream entries (ideas, thoughts, reminders, etc.) that you'd like to preserve elsewhere, please export or copy them before the interface changes take effect. New entries can only be created as dreams.
 
 ## Getting Started
 

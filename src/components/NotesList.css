@@ -12,33 +12,13 @@
   border-radius: 12px;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #e2e8f0;
+  border-left: 4px solid #7c3aed;
   transition: all 0.2s ease;
 }
 
 .note-card:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-1px);
-}
-
-.note-card.category-dream {
-  border-left-color: #7c3aed;
-}
-
-.note-card.category-idea {
-  border-left-color: #d97706;
-}
-
-.note-card.category-thought {
-  border-left-color: #059669;
-}
-
-.note-card.category-reminder {
-  border-left-color: #dc2626;
-}
-
-.note-card.category-other {
-  border-left-color: #64748b;
 }
 
 .note-header {
@@ -55,31 +35,8 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-}
-
-.category-badge.category-dream {
   background: #ddd6fe;
   color: #5b21b6;
-}
-
-.category-badge.category-idea {
-  background: #fef3c7;
-  color: #92400e;
-}
-
-.category-badge.category-thought {
-  background: #d1fae5;
-  color: #065f46;
-}
-
-.category-badge.category-reminder {
-  background: #fecaca;
-  color: #991b1b;
-}
-
-.category-badge.category-other {
-  background: #e2e8f0;
-  color: #475569;
 }
 
 .note-actions {
