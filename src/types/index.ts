@@ -7,7 +7,7 @@ export interface Note {
   userId?: string;
 }
 
-export type NoteCategory = 'dream' | 'idea' | 'thought' | 'reminder' | 'other';
+export type NoteCategory = 'dream';
 
 export interface User {
   id: string;
