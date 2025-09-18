@@ -1,5 +1,24 @@
 # Dream Journal
 
+A lightweight, accessible application exclusively for recording, exploring, and analyzing your dreams. Built with React and TypeScript, featuring multi-language support and offline-first storage.
+
+## Features
+
+- **Dream Recording**: Fast, distraction-free interface for capturing dream memories
+- **Dream-Focused Interface**: Purpose-built for dream journaling only
+- **Multi-language Support**: Available in English, French, Spanish, and German
+- **Offline-First**: Local storage with optional cloud synchronization
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Accessibility**: Full keyboard navigation and screen reader support
+
+## Important Notice for Existing Users
+
+**Application Focus Change**: This application has been refocused to be exclusively a dream journal. All existing entries will continue to be accessible, but the app now only supports recording dreams. 
+
+If you have non-dream entries (ideas, thoughts, reminders, etc.) that you'd like to preserve elsewhere, please export or copy them before the interface changes take effect. New entries can only be created as dreams.
+
+## Getting Started
+
 A multilingual Progressive Web App (PWA) for capturing your ideas and dreams. This lightweight and easily accessible tool helps you quickly jot down thoughts, dreams, and inspirations before they fade away.
 
 ## ✨ Features
@@ -122,3 +141,42 @@ If you encounter any issues or have questions:
 - Icons from [React Icons](https://react-icons.github.io/react-icons/)
 - Internationalization with [react-i18next](https://react.i18next.com/)
 - Offline storage with [localforage](https://localforage.github.io/localForage/)
+=======
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Development
+
+### Architecture
+
+The application follows a component-based architecture with:
+- **React Context** for state management
+- **LocalForage** for offline-first storage
+- **react-i18next** for internationalization
+- **TypeScript** for type safety
+
+### Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── hooks/          # Custom React hooks
+├── i18n/           # Internationalization config
+├── services/       # Business logic and storage
+└── types/          # TypeScript definitions
+```
+
+### For AI Assistants
+
+If you're using GitHub Copilot or other AI coding assistants, please refer to [`.copilot-instructions.md`](./.copilot-instructions.md) for detailed coding patterns, conventions, and project-specific guidance.
+
+## Contributing
+
+1. Follow the existing code patterns and TypeScript conventions
+2. Add translations for any new user-facing text
+3. Ensure accessibility compliance with keyboard navigation and ARIA labels
+4. Test on both desktop and mobile devices
+5. Run `npm run build` to verify the build passes
+
+## License
+
+This project is private and not open for external contributions.
