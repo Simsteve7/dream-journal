@@ -1,9 +1,6 @@
 # Dream Journal 🌙✨
 
-A lightweight, accessible web application for capturing your dreams, ideas, and thoughts. Whether you want to record a dream while you still remember it or jot down that brilliant idea that just popped into your head, Dream Journal provides a simple, intuitive interface for organizing your mental notes.
-
-[![Build Status](https://github.com/Simsteve7/dream-journal/workflows/CI/badge.svg)](https://github.com/Simsteve7/dream-journal/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+A lightweight, accessible application exclusively for recording, exploring, and analyzing your dreams. Built with React and TypeScript, featuring multi-language support and offline-first storage.
 
 ## ✨ Features
 
@@ -104,6 +101,18 @@ Change the application language from the settings menu. Supported languages:
 - **Authentication**: Multiple providers via Azure MSAL and Firebase
 - **Build Tool**: Create React App
 - **Testing**: Jest + React Testing Library
+=======
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Development
+
+### Architecture
+
+The application follows a component-based architecture with:
+- **React Context** for state management
+- **LocalForage** for offline-first storage
+- **react-i18next** for internationalization
+- **TypeScript** for type safety
 
 ### Project Structure
 
@@ -144,3 +153,26 @@ For security concerns, please review our [Security Policy](SECURITY.md).
 - Built with [Create React App](https://github.com/facebook/create-react-app)
 - Icons provided by [React Icons](https://react-icons.github.io/react-icons/)
 - Internationalization powered by [i18next](https://www.i18next.com/)
+=======
+├── components/     # Reusable UI components
+├── hooks/          # Custom React hooks
+├── i18n/           # Internationalization config
+├── services/       # Business logic and storage
+└── types/          # TypeScript definitions
+```
+
+### For AI Assistants
+
+If you're using GitHub Copilot or other AI coding assistants, please refer to [`.copilot-instructions.md`](./.copilot-instructions.md) for detailed coding patterns, conventions, and project-specific guidance.
+
+## Contributing
+
+1. Follow the existing code patterns and TypeScript conventions
+2. Add translations for any new user-facing text
+3. Ensure accessibility compliance with keyboard navigation and ARIA labels
+4. Test on both desktop and mobile devices
+5. Run `npm run build` to verify the build passes
+
+## License
+
+This project is private and not open for external contributions.

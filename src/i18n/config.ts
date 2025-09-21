@@ -7,16 +7,12 @@ const resources = {
   en: {
     translation: {
       title: 'Dream Journal',
-      subtitle: 'Capture your ideas and dreams',
-      placeholder: 'What\'s on your mind? Enter your dream or idea...',
-      submit: 'Save Note',
-      categorize: 'Categorize Note',
+      subtitle: 'Record and explore your dreams',
+      placeholder: 'Describe your dream...',
+      submit: 'Save Dream',
+      categorize: 'Save Dream',
       categories: {
-        dream: 'Dream',
-        idea: 'Idea',
-        thought: 'Thought',
-        reminder: 'Reminder',
-        other: 'Other'
+        dream: 'Dream'
       },
       auth: {
         signIn: 'Sign In',
@@ -29,8 +25,8 @@ const resources = {
         syncData: 'Sync your data across devices'
       },
       notes: {
-        noNotes: 'No notes yet. Start writing!',
-        deleteConfirm: 'Are you sure you want to delete this note?',
+        noNotes: 'No dreams recorded yet. Start writing about your dreams!',
+        deleteConfirm: 'Are you sure you want to delete this dream?',
         delete: 'Delete',
         edit: 'Edit',
         createdAt: 'Created at'
@@ -47,16 +43,12 @@ const resources = {
   es: {
     translation: {
       title: 'Diario de Sueños',
-      subtitle: 'Captura tus ideas y sueños',
-      placeholder: '¿Qué tienes en mente? Escribe tu sueño o idea...',
-      submit: 'Guardar Nota',
-      categorize: 'Categorizar Nota',
+      subtitle: 'Registra y explora tus sueños',
+      placeholder: 'Describe tu sueño...',
+      submit: 'Guardar Sueño',
+      categorize: 'Guardar Sueño',
       categories: {
-        dream: 'Sueño',
-        idea: 'Idea',
-        thought: 'Pensamiento',
-        reminder: 'Recordatorio',
-        other: 'Otro'
+        dream: 'Sueño'
       },
       auth: {
         signIn: 'Iniciar Sesión',
@@ -69,8 +61,8 @@ const resources = {
         syncData: 'Sincroniza tus datos entre dispositivos'
       },
       notes: {
-        noNotes: 'No hay notas aún. ¡Empieza a escribir!',
-        deleteConfirm: '¿Estás seguro de que quieres eliminar esta nota?',
+        noNotes: '¡Aún no hay sueños registrados. Empieza a escribir sobre tus sueños!',
+        deleteConfirm: '¿Estás seguro de que quieres eliminar este sueño?',
         delete: 'Eliminar',
         edit: 'Editar',
         createdAt: 'Creado el'
@@ -87,16 +79,12 @@ const resources = {
   fr: {
     translation: {
       title: 'Journal des Rêves',
-      subtitle: 'Capturez vos idées et rêves',
-      placeholder: 'À quoi pensez-vous ? Entrez votre rêve ou idée...',
-      submit: 'Enregistrer la Note',
-      categorize: 'Catégoriser la Note',
+      subtitle: 'Enregistrez et explorez vos rêves',
+      placeholder: 'Décrivez votre rêve...',
+      submit: 'Enregistrer le Rêve',
+      categorize: 'Enregistrer le Rêve',
       categories: {
-        dream: 'Rêve',
-        idea: 'Idée',
-        thought: 'Pensée',
-        reminder: 'Rappel',
-        other: 'Autre'
+        dream: 'Rêve'
       },
       auth: {
         signIn: 'Se Connecter',
@@ -109,8 +97,8 @@ const resources = {
         syncData: 'Synchronisez vos données sur tous les appareils'
       },
       notes: {
-        noNotes: 'Aucune note encore. Commencez à écrire !',
-        deleteConfirm: 'Êtes-vous sûr de vouloir supprimer cette note ?',
+        noNotes: 'Aucun rêve enregistré encore. Commencez à écrire sur vos rêves !',
+        deleteConfirm: 'Êtes-vous sûr de vouloir supprimer ce rêve ?',
         delete: 'Supprimer',
         edit: 'Modifier',
         createdAt: 'Créé le'
@@ -127,16 +115,12 @@ const resources = {
   de: {
     translation: {
       title: 'Traumtagebuch',
-      subtitle: 'Erfassen Sie Ihre Ideen und Träume',
-      placeholder: 'Was beschäftigt Sie? Geben Sie Ihren Traum oder Ihre Idee ein...',
-      submit: 'Notiz Speichern',
-      categorize: 'Notiz Kategorisieren',
+      subtitle: 'Erfassen und erkunden Sie Ihre Träume',
+      placeholder: 'Beschreiben Sie Ihren Traum...',
+      submit: 'Traum Speichern',
+      categorize: 'Traum Speichern',
       categories: {
-        dream: 'Traum',
-        idea: 'Idee',
-        thought: 'Gedanke',
-        reminder: 'Erinnerung',
-        other: 'Andere'
+        dream: 'Traum'
       },
       auth: {
         signIn: 'Anmelden',
@@ -149,8 +133,8 @@ const resources = {
         syncData: 'Synchronisieren Sie Ihre Daten geräteübergreifend'
       },
       notes: {
-        noNotes: 'Noch keine Notizen. Fangen Sie an zu schreiben!',
-        deleteConfirm: 'Sind Sie sicher, dass Sie diese Notiz löschen möchten?',
+        noNotes: 'Noch keine Träume aufgezeichnet. Fangen Sie an, über Ihre Träume zu schreiben!',
+        deleteConfirm: 'Sind Sie sicher, dass Sie diesen Traum löschen möchten?',
         delete: 'Löschen',
         edit: 'Bearbeiten',
         createdAt: 'Erstellt am'
