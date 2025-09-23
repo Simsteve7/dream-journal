@@ -1,38 +1,12 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
-import { AppProvider } from './hooks/useApp';
-=======
-import React, { useEffect } from 'react';
-=======
-import React, { useState, useEffect } from 'react';
->>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
 import { AppProvider, useApp } from './hooks/useApp';
->>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
 import { Header } from './components/Header';
 import { NoteInput } from './components/NoteInput';
 import { NotesList } from './components/NotesList';
 import { QuickEntry } from './components/QuickEntry';
 import './App.css';
 
-function AppContent() {
-  const { state } = useApp();
-
-  useEffect(() => {
-    // Apply theme to document root
-    document.documentElement.setAttribute('data-theme', state.settings.theme);
-  }, [state.settings.theme]);
-
-  return (
-    <div className="App">
-      <Header />
-      <main className="main-content">
-        <NoteInput />
-        <NotesList />
-      </main>
-    </div>
-  );
-}
+// Verwijderd: dubbele AppContent component
 
 function App() {
   const [showQuickEntry, setShowQuickEntry] = useState(false);
@@ -52,29 +26,14 @@ function App() {
 
   return (
     <AppProvider>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
       <div className="App">
         <Header onQuickEntry={() => setShowQuickEntry(true)} />
         <main className="main-content">
           <NoteInput />
           <NotesList />
         </main>
-<<<<<<< HEAD
-        <QuickEntry 
-          isOpen={showQuickEntry}
-          onClose={() => setShowQuickEntry(false)}
-        />
+        {showQuickEntry && <QuickEntry isOpen={showQuickEntry} onClose={() => setShowQuickEntry(false)} />}
       </div>
-=======
-      <AppContent />
->>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
-=======
-  {showQuickEntry && <QuickEntry isOpen={showQuickEntry} onClose={() => setShowQuickEntry(false)} />}
-      </div>
->>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
     </AppProvider>
   );
 }

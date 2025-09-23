@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-<<<<<<< HEAD
-<<<<<<< HEAD
-import { GlobeIcon, UserIcon, LightningIcon } from './icons';
-=======
-import { GlobeIcon, UserIcon, MoonIcon, SunIcon } from './icons';
->>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
-=======
 import { GlobeIcon, UserIcon, LightningIcon, MoonIcon, SunIcon } from './icons';
->>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
 import { useApp } from '../hooks/useApp';
 import './Header.css';
 
@@ -19,7 +11,7 @@ interface LanguageSelectorProps {
 
 function LanguageSelector({ isOpen, onClose }: LanguageSelectorProps) {
   const { i18n } = useTranslation();
-  
+
   const languages = [
     { code: 'en', name: 'English', flag: '🇺🇸' },
     { code: 'es', name: 'Español', flag: '🇪🇸' },
@@ -133,7 +125,7 @@ export function Header({ onQuickEntry }: { onQuickEntry?: () => void }) {
           <h1 className="app-title">{t('title')}</h1>
           <p className="app-subtitle">{t('subtitle')}</p>
         </div>
-        
+
         <div className="header-right">
           {onQuickEntry && (
             <button
@@ -145,7 +137,7 @@ export function Header({ onQuickEntry }: { onQuickEntry?: () => void }) {
               <span className="quick-entry-label">{t('quickEntry.title')}</span>
             </button>
           )}
-          
+
           <button
             className="header-btn"
             onClick={handleThemeToggle}
@@ -153,7 +145,7 @@ export function Header({ onQuickEntry }: { onQuickEntry?: () => void }) {
           >
             {state.settings.theme === 'light' ? <MoonIcon size={18} /> : <SunIcon size={18} />}
           </button>
-          
+
           <button
             className="header-btn"
             onClick={() => setShowLanguageSelector(!showLanguageSelector)}
@@ -161,7 +153,7 @@ export function Header({ onQuickEntry }: { onQuickEntry?: () => void }) {
           >
             <GlobeIcon size={18} />
           </button>
-          
+
           <button
             className="header-btn"
             onClick={() => setShowAuthMenu(!showAuthMenu)}
