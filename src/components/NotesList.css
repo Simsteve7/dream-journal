@@ -8,16 +8,16 @@
 }
 
 .note-card {
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-left: 4px solid #7c3aed;
+  box-shadow: 0 2px 4px var(--shadow-light);
+  border-left: 4px solid var(--border-accent);
   transition: all 0.2s ease;
 }
 
 .note-card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 8px var(--shadow-medium);
   transform: translateY(-1px);
 }
 
@@ -35,8 +35,8 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  background: #ddd6fe;
-  color: #5b21b6;
+  background: var(--category-bg);
+  color: var(--category-text);
 }
 
 .note-actions {
@@ -52,35 +52,35 @@
   height: 32px;
   border: none;
   border-radius: 6px;
-  background: #f1f5f9;
-  color: #64748b;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.2s ease;
 }
 
 .action-btn:hover {
-  background: #e2e8f0;
-  color: #475569;
+  background: var(--border-color);
+  color: var(--text-primary);
 }
 
 .edit-btn:hover {
-  background: #dbeafe;
-  color: #2563eb;
+  background: var(--focus-color);
+  color: var(--text-header);
 }
 
 .delete-btn:hover {
-  background: #fee2e2;
-  color: #dc2626;
+  background: var(--danger-color);
+  color: var(--text-header);
 }
 
 .delete-btn.confirm {
-  background: #dc2626;
-  color: white;
+  background: var(--danger-color);
+  color: var(--text-header);
   animation: pulse 1s infinite;
 }
 
 .note-content {
-  color: #374151;
+  color: var(--text-primary);
   line-height: 1.6;
   margin-bottom: 1rem;
   white-space: pre-wrap;
@@ -88,7 +88,7 @@
 }
 
 .note-footer {
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid var(--border-color);
   padding-top: 0.75rem;
 }
 
@@ -96,7 +96,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #64748b;
+  color: var(--text-secondary);
   font-size: 0.875rem;
 }
 
@@ -110,11 +110,11 @@
   top: 100%;
   left: 0;
   right: 0;
-  background: white;
-  border: 1px solid #e5e7eb;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px var(--shadow-light);
   z-index: 10;
   margin-top: 0.5rem;
 }
@@ -125,7 +125,7 @@
 
 .delete-confirm p {
   margin: 0 0 1rem 0;
-  color: #374151;
+  color: var(--text-primary);
   font-size: 0.875rem;
 }
 
@@ -145,8 +145,8 @@
 }
 
 .confirm-btn.delete {
-  background: #dc2626;
-  color: white;
+  background: var(--danger-color);
+  color: var(--text-header);
 }
 
 .confirm-btn.delete:hover {
@@ -154,18 +154,18 @@
 }
 
 .confirm-btn.cancel {
-  background: #f1f5f9;
-  color: #64748b;
+  background: var(--bg-primary);
+  color: var(--text-secondary);
 }
 
 .confirm-btn.cancel:hover {
-  background: #e2e8f0;
+  background: var(--border-color);
 }
 
 .empty-state {
   text-align: center;
   padding: 3rem 1rem;
-  color: #64748b;
+  color: var(--text-secondary);
   font-size: 1.125rem;
 }
 
@@ -176,7 +176,7 @@
 
 .edit-modal h3 {
   margin: 0 0 1.5rem 0;
-  color: #1e293b;
+  color: var(--text-primary);
   font-size: 1.25rem;
 }
 
@@ -184,7 +184,7 @@
   width: 100%;
   min-height: 150px;
   padding: 0.75rem;
-  border: 2px solid #e2e8f0;
+  border: 2px solid var(--border-color);
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
@@ -192,10 +192,12 @@
   resize: vertical;
   outline: none;
   transition: border-color 0.2s ease;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
 }
 
 .edit-textarea:focus {
-  border-color: #3b82f6;
+  border-color: var(--focus-color);
 }
 
 .edit-actions {

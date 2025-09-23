@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+<<<<<<< HEAD
 import { GlobeIcon, UserIcon, LightningIcon } from './icons';
+=======
+import { GlobeIcon, UserIcon, MoonIcon, SunIcon } from './icons';
+>>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
 import { useApp } from '../hooks/useApp';
 import './Header.css';
 
@@ -106,9 +110,17 @@ function AuthMenu({ isOpen, onClose }: AuthMenuProps) {
 
 export function Header({ onQuickEntry }: { onQuickEntry?: () => void }) {
   const { t } = useTranslation();
-  const { state } = useApp();
+  const { state, actions } = useApp();
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
   const [showAuthMenu, setShowAuthMenu] = useState(false);
+
+  const handleThemeToggle = async () => {
+    const newTheme = state.settings.theme === 'light' ? 'dark' : 'light';
+    await actions.updateSettings({
+      ...state.settings,
+      theme: newTheme
+    });
+  };
 
   return (
     <header className="app-header">
@@ -129,6 +141,14 @@ export function Header({ onQuickEntry }: { onQuickEntry?: () => void }) {
               <span className="quick-entry-label">{t('quickEntry.title')}</span>
             </button>
           )}
+          
+          <button
+            className="header-btn"
+            onClick={handleThemeToggle}
+            title={state.settings.theme === 'light' ? t('settings.darkMode') : t('settings.lightMode')}
+          >
+            {state.settings.theme === 'light' ? <MoonIcon size={18} /> : <SunIcon size={18} />}
+          </button>
           
           <button
             className="header-btn"

@@ -36,7 +36,9 @@ const resources = {
         theme: 'Theme',
         storage: 'Storage',
         local: 'Local only',
-        cloud: 'Cloud sync'
+        cloud: 'Cloud sync',
+        darkMode: 'Switch to dark mode',
+        lightMode: 'Switch to light mode'
       },
       quickEntry: {
         title: 'Quick Log',
@@ -84,7 +86,9 @@ const resources = {
         theme: 'Tema',
         storage: 'Almacenamiento',
         local: 'Solo local',
-        cloud: 'Sincronización en la nube'
+        cloud: 'Sincronización en la nube',
+        darkMode: 'Cambiar a modo oscuro',
+        lightMode: 'Cambiar a modo claro'
       },
       quickEntry: {
         title: 'Registro Rápido',
@@ -132,7 +136,9 @@ const resources = {
         theme: 'Thème',
         storage: 'Stockage',
         local: 'Local uniquement',
-        cloud: 'Synchronisation cloud'
+        cloud: 'Synchronisation cloud',
+        darkMode: 'Passer en mode sombre',
+        lightMode: 'Passer en mode clair'
       },
       quickEntry: {
         title: 'Saisie Rapide',
@@ -180,7 +186,9 @@ const resources = {
         theme: 'Design',
         storage: 'Speicher',
         local: 'Nur lokal',
-        cloud: 'Cloud-Synchronisation'
+        cloud: 'Cloud-Synchronisation',
+        darkMode: 'Zum dunklen Modus wechseln',
+        lightMode: 'Zum hellen Modus wechseln'
       },
       quickEntry: {
         title: 'Schnelleintrag',
