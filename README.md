@@ -1,67 +1,107 @@
-# Dream Journal
+# Dream Journal 🌙✨
 
 A lightweight, accessible application exclusively for recording, exploring, and analyzing your dreams. Built with React and TypeScript, featuring multi-language support and offline-first storage.
 
-## Features
+## ✨ Features
 
-- **Dream Recording**: Fast, distraction-free interface for capturing dream memories
-- **Dream-Focused Interface**: Purpose-built for dream journaling only
-- **Multi-language Support**: Available in English, French, Spanish, and German
-- **Offline-First**: Local storage with optional cloud synchronization
-- **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **Accessibility**: Full keyboard navigation and screen reader support
+- **Multi-language Support**: Available in English, French, German, and Spanish
+- **Category Organization**: Organize entries as Dreams, Ideas, Thoughts, Reminders, or Other
+- **Cloud Synchronization**: Sync your data across devices with multiple auth providers
+- **Local Storage**: Works offline with local-only mode
+- **Responsive Design**: Optimized for desktop and mobile devices
+- **Dark/Light Themes**: Choose your preferred viewing experience
+- **Privacy-First**: Your data stays private with optional cloud sync
 
-## Important Notice for Existing Users
+## 🎯 Target Audience
 
-**Application Focus Change**: This application has been refocused to be exclusively a dream journal. All existing entries will continue to be accessible, but the app now only supports recording dreams. 
+- Dream enthusiasts who want to track and analyze their dreams
+- Creative individuals capturing spontaneous ideas
+- Anyone looking for a simple, private note-taking solution
+- Users who need cross-device synchronization for their personal notes
 
-If you have non-dream entries (ideas, thoughts, reminders, etc.) that you'd like to preserve elsewhere, please export or copy them before the interface changes take effect. New entries can only be created as dreams.
+## 🚀 Getting Started
 
-## Getting Started
+### Prerequisites
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Node.js (version 16 or higher)
+- npm or yarn package manager
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Simsteve7/dream-journal.git
+   cd dream-journal
+   ```
 
-### `npm start`
+2. Install dependencies:
+   ```bash
+   npm install --legacy-peer-deps
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### `npm test`
+### Building for Production
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm run build
+```
 
-### `npm run build`
+Builds the app for production to the `build` folder. The build is optimized for performance and ready for deployment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🎮 Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Basic Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Adding Notes**: Use the text area to write your dream, idea, or thought
+2. **Categorization**: Select the appropriate category for your entry
+3. **Saving**: Click "Save Note" to store your entry
+4. **Management**: Edit or delete existing notes using the action buttons
 
-### `npm run eject`
+### Cloud Synchronization
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Click on the authentication option in the settings
+2. Choose your preferred provider (Google, Facebook, GitHub, Microsoft)
+3. Your notes will automatically sync across all your devices
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Language Settings
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Change the application language from the settings menu. Supported languages:
+- English (en)
+- French (fr)
+- German (de)
+- Spanish (es)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Storage Options
 
-## Learn More
+- **Local Only**: All data stays on your device
+- **Cloud Sync**: Data is synchronized across devices using your chosen auth provider
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🛠️ Development
 
+### Available Scripts
+
+- `npm start` - Runs the development server
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
+
+### Technology Stack
+
+- **Frontend**: React 19 with TypeScript
+- **State Management**: React Context + useReducer
+- **Styling**: CSS3 with CSS Variables for theming
+- **Internationalization**: i18next
+- **Storage**: LocalForage for local storage, Firebase for cloud sync
+- **Authentication**: Multiple providers via Azure MSAL and Firebase
+- **Build Tool**: Create React App
+- **Testing**: Jest + React Testing Library
+=======
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Development
@@ -78,6 +118,42 @@ The application follows a component-based architecture with:
 
 ```
 src/
+├── components/     # React components
+├── hooks/         # Custom React hooks
+├── i18n/          # Internationalization configuration
+├── services/      # External service integrations
+├── types/         # TypeScript type definitions
+└── App.tsx        # Main application component
+```
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details on:
+
+- How to submit bug reports and feature requests
+- Development setup and coding standards
+- Pull request process
+- Code of conduct
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🔒 Security
+
+For security concerns, please review our [Security Policy](SECURITY.md).
+
+## 📞 Support
+
+- Create an [issue](https://github.com/Simsteve7/dream-journal/issues) for bug reports or feature requests
+- Check the [discussions](https://github.com/Simsteve7/dream-journal/discussions) for community support
+
+## 🎉 Acknowledgments
+
+- Built with [Create React App](https://github.com/facebook/create-react-app)
+- Icons provided by [React Icons](https://react-icons.github.io/react-icons/)
+- Internationalization powered by [i18next](https://www.i18next.com/)
+=======
 ├── components/     # Reusable UI components
 ├── hooks/          # Custom React hooks
 ├── i18n/           # Internationalization config
