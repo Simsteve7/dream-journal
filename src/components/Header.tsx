@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { GlobeIcon, UserIcon } from './icons';
+import { GlobeIcon, UserIcon, LightningIcon } from './icons';
 import { useApp } from '../hooks/useApp';
 import './Header.css';
 
@@ -104,7 +104,7 @@ function AuthMenu({ isOpen, onClose }: AuthMenuProps) {
   );
 }
 
-export function Header() {
+export function Header({ onQuickEntry }: { onQuickEntry?: () => void }) {
   const { t } = useTranslation();
   const { state } = useApp();
   const [showLanguageSelector, setShowLanguageSelector] = useState(false);
@@ -119,6 +119,17 @@ export function Header() {
         </div>
         
         <div className="header-right">
+          {onQuickEntry && (
+            <button
+              className="header-btn quick-entry-btn"
+              onClick={onQuickEntry}
+              title={t('quickEntry.title')}
+            >
+              <LightningIcon size={18} />
+              <span className="quick-entry-label">{t('quickEntry.title')}</span>
+            </button>
+          )}
+          
           <button
             className="header-btn"
             onClick={() => setShowLanguageSelector(!showLanguageSelector)}
