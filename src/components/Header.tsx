@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import { GlobeIcon, UserIcon, LightningIcon } from './icons';
 =======
 import { GlobeIcon, UserIcon, MoonIcon, SunIcon } from './icons';
 >>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
+=======
+import { GlobeIcon, UserIcon, LightningIcon, MoonIcon, SunIcon } from './icons';
+>>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
 import { useApp } from '../hooks/useApp';
 import './Header.css';
 

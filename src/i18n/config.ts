@@ -201,6 +201,18 @@ const resources = {
         cancel: 'Abbrechen',
         save: 'Speichern',
         close: 'Schließen'
+      },
+      quickEntry: {
+        title: 'Schnelleintrag',
+        placeholder: 'Erfassen Sie schnell Ihren Traum...',
+        hint: 'Ctrl+Enter zum Speichern, Esc zum Schließen, Ctrl+Q zum Öffnen',
+        save: 'Speichern',
+        saving: 'Speichern...'
+      },
+      common: {
+        cancel: 'Abbrechen',
+        save: 'Speichern',
+        close: 'Schließen'
       }
     }
   }

@@ -111,8 +111,27 @@ export const ClockIcon: React.FC<IconProps> = ({ size = 14, className }) => (
 );
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 export const LightningIcon: React.FC<IconProps> = ({ size = 16, className }) => (
 =======
+=======
+export const LightningIcon: React.FC<IconProps> = ({ size = 16, className }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2" />
+  </svg>
+);
+
+>>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
 export const MoonIcon: React.FC<IconProps> = ({ size = 18, className }) => (
 >>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
   <svg
@@ -157,3 +176,4 @@ export const SunIcon: React.FC<IconProps> = ({ size = 18, className }) => (
 >>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
   </svg>
 );
+// ...bestaande code...

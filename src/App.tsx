@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React, { useState, useEffect } from 'react';
 import { AppProvider } from './hooks/useApp';
 =======
 import React, { useEffect } from 'react';
+=======
+import React, { useState, useEffect } from 'react';
+>>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
 import { AppProvider, useApp } from './hooks/useApp';
 >>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
 import { Header } from './components/Header';
@@ -49,12 +53,16 @@ function App() {
   return (
     <AppProvider>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
       <div className="App">
         <Header onQuickEntry={() => setShowQuickEntry(true)} />
         <main className="main-content">
           <NoteInput />
           <NotesList />
         </main>
+<<<<<<< HEAD
         <QuickEntry 
           isOpen={showQuickEntry}
           onClose={() => setShowQuickEntry(false)}
@@ -63,6 +71,10 @@ function App() {
 =======
       <AppContent />
 >>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
+=======
+  {showQuickEntry && <QuickEntry isOpen={showQuickEntry} onClose={() => setShowQuickEntry(false)} />}
+      </div>
+>>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
     </AppProvider>
   );
 }
