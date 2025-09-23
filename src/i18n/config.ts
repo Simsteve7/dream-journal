@@ -37,6 +37,18 @@ const resources = {
         storage: 'Storage',
         local: 'Local only',
         cloud: 'Cloud sync'
+      },
+      quickEntry: {
+        title: 'Quick Log',
+        placeholder: 'Quickly capture your dream...',
+        hint: 'Ctrl+Enter to save, Esc to close, Ctrl+Q to open',
+        save: 'Save',
+        saving: 'Saving...'
+      },
+      common: {
+        cancel: 'Cancel',
+        save: 'Save',
+        close: 'Close'
       }
     }
   },
@@ -73,6 +85,18 @@ const resources = {
         storage: 'Almacenamiento',
         local: 'Solo local',
         cloud: 'Sincronización en la nube'
+      },
+      quickEntry: {
+        title: 'Registro Rápido',
+        placeholder: 'Captura rápidamente tu sueño...',
+        hint: 'Ctrl+Enter para guardar, Esc para cerrar, Ctrl+Q para abrir',
+        save: 'Guardar',
+        saving: 'Guardando...'
+      },
+      common: {
+        cancel: 'Cancelar',
+        save: 'Guardar',
+        close: 'Cerrar'
       }
     }
   },
@@ -109,6 +133,18 @@ const resources = {
         storage: 'Stockage',
         local: 'Local uniquement',
         cloud: 'Synchronisation cloud'
+      },
+      quickEntry: {
+        title: 'Saisie Rapide',
+        placeholder: 'Capturez rapidement votre rêve...',
+        hint: 'Ctrl+Entrée pour sauvegarder, Échap pour fermer, Ctrl+Q pour ouvrir',
+        save: 'Enregistrer',
+        saving: 'Sauvegarde...'
+      },
+      common: {
+        cancel: 'Annuler',
+        save: 'Enregistrer',
+        close: 'Fermer'
       }
     }
   },
@@ -145,6 +181,18 @@ const resources = {
         storage: 'Speicher',
         local: 'Nur lokal',
         cloud: 'Cloud-Synchronisation'
+      },
+      quickEntry: {
+        title: 'Schnelleintrag',
+        placeholder: 'Erfassen Sie schnell Ihren Traum...',
+        hint: 'Strg+Enter zum Speichern, Esc zum Schließen, Strg+Q zum Öffnen',
+        save: 'Speichern',
+        saving: 'Speichern...'
+      },
+      common: {
+        cancel: 'Abbrechen',
+        save: 'Speichern',
+        close: 'Schließen'
       }
     }
   }
