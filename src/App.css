@@ -1,3 +1,46 @@
+/* CSS Variables for theming */
+:root {
+  /* Light theme colors */
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-header: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-header: #ffffff;
+  --border-color: #e2e8f0;
+  --border-accent: #7c3aed;
+  --shadow-light: rgba(0, 0, 0, 0.1);
+  --shadow-medium: rgba(0, 0, 0, 0.15);
+  --button-bg: rgba(255, 255, 255, 0.2);
+  --button-bg-hover: rgba(255, 255, 255, 0.3);
+  --category-bg: #ddd6fe;
+  --category-text: #5b21b6;
+  --success-color: #10b981;
+  --danger-color: #dc2626;
+  --focus-color: #3b82f6;
+}
+
+[data-theme="dark"] {
+  /* Dark theme colors */
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-header: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%);
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-header: #f1f5f9;
+  --border-color: #334155;
+  --border-accent: #8b5cf6;
+  --shadow-light: rgba(0, 0, 0, 0.3);
+  --shadow-medium: rgba(0, 0, 0, 0.4);
+  --button-bg: rgba(255, 255, 255, 0.1);
+  --button-bg-hover: rgba(255, 255, 255, 0.2);
+  --category-bg: #4c1d95;
+  --category-text: #c4b5fd;
+  --success-color: #059669;
+  --danger-color: #dc2626;
+  --focus-color: #60a5fa;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,9 +52,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #f8fafc;
-  color: #1e293b;
+  background: var(--bg-primary);
+  color: var(--text-primary);
   line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .App {
@@ -39,8 +83,8 @@ body {
 .spinner {
   width: 32px;
   height: 32px;
-  border: 3px solid #e2e8f0;
-  border-top: 3px solid #3b82f6;
+  border: 3px solid var(--border-color);
+  border-top: 3px solid var(--focus-color);
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -75,7 +119,7 @@ body {
 
 /* Focus styles */
 *:focus {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid var(--focus-color);
   outline-offset: 2px;
 }
 
@@ -83,7 +127,7 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: 2px solid #3b82f6;
+  outline: 2px solid var(--focus-color);
   outline-offset: 2px;
 }
 
