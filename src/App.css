@@ -18,6 +18,8 @@
   --success-color: #10b981;
   --danger-color: #dc2626;
   --focus-color: #3b82f6;
+  --submit-button-bg: #3b82f6;
+  --submit-button-hover: #2563eb;
 }
 
 [data-theme="dark"] {
@@ -39,6 +41,8 @@
   --success-color: #059669;
   --danger-color: #dc2626;
   --focus-color: #60a5fa;
+  --submit-button-bg: #1e40af;
+  --submit-button-hover: #1d4ed8;
 }
 
 * {
