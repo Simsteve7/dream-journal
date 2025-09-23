@@ -51,7 +51,7 @@
   justify-content: center;
   gap: 0.5rem;
   padding: 0.75rem 1.5rem;
-  background: var(--focus-color);
+  background: var(--submit-button-bg);
   color: var(--text-header);
   border: none;
   border-radius: 8px;
@@ -63,7 +63,7 @@
 }
 
 .submit-btn:hover:not(:disabled) {
-  background: var(--border-accent);
+  background: var(--submit-button-hover);
   transform: translateY(-1px);
 }
 
