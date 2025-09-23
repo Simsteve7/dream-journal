@@ -110,11 +110,6 @@ export const ClockIcon: React.FC<IconProps> = ({ size = 14, className }) => (
   </svg>
 );
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-export const LightningIcon: React.FC<IconProps> = ({ size = 16, className }) => (
-=======
-=======
 export const LightningIcon: React.FC<IconProps> = ({ size = 16, className }) => (
   <svg
     width={size}
@@ -131,9 +126,7 @@ export const LightningIcon: React.FC<IconProps> = ({ size = 16, className }) => 
   </svg>
 );
 
->>>>>>> 9b7525f (Implement Quick Entry feature for fast dream logging)
 export const MoonIcon: React.FC<IconProps> = ({ size = 18, className }) => (
->>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
   <svg
     width={size}
     height={size}
@@ -145,9 +138,6 @@ export const MoonIcon: React.FC<IconProps> = ({ size = 18, className }) => (
     strokeLinejoin="round"
     className={className}
   >
-<<<<<<< HEAD
-    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10 13,2" />
-=======
     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
   </svg>
 );
@@ -173,7 +163,5 @@ export const SunIcon: React.FC<IconProps> = ({ size = 18, className }) => (
     <line x1="21" y1="12" x2="23" y2="12" />
     <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
     <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
->>>>>>> 1a2ddb5 (Implement complete dark mode functionality with theme toggle)
   </svg>
 );
-// ...bestaande code...

@@ -6,10 +6,14 @@ import { NotesList } from './components/NotesList';
 import { QuickEntry } from './components/QuickEntry';
 import './App.css';
 
-// Verwijderd: dubbele AppContent component
-
-function App() {
+function AppContent() {
+  const { state } = useApp();
   const [showQuickEntry, setShowQuickEntry] = useState(false);
+
+  useEffect(() => {
+    // Apply theme to document root
+    document.documentElement.setAttribute('data-theme', state.settings.theme);
+  }, [state.settings.theme]);
 
   // Global keyboard shortcut for quick entry
   useEffect(() => {
@@ -25,15 +29,24 @@ function App() {
   }, []);
 
   return (
+    <div className="App">
+      <Header onQuickEntry={() => setShowQuickEntry(true)} />
+      <main className="main-content">
+        <NoteInput />
+        <NotesList />
+      </main>
+      <QuickEntry 
+        isOpen={showQuickEntry}
+        onClose={() => setShowQuickEntry(false)}
+      />
+    </div>
+  );
+}
+
+function App() {
+  return (
     <AppProvider>
-      <div className="App">
-        <Header onQuickEntry={() => setShowQuickEntry(true)} />
-        <main className="main-content">
-          <NoteInput />
-          <NotesList />
-        </main>
-        {showQuickEntry && <QuickEntry isOpen={showQuickEntry} onClose={() => setShowQuickEntry(false)} />}
-      </div>
+      <AppContent />
     </AppProvider>
   );
 }
